@@ -1,12 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="de">
 
 <head>
-    <title>This is the title of the webpage!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genauglich</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="animation/isotope-docs.min.js"></script>
+    <script src="animation/function.js"></script>
 </head>
 
 <body>
-    <p>This ist an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-</body>
+    <div class="centered">
+        <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
+            <!-- Für Browser ohne SVG-Unterstützung -->
+        </object>
+    </div>
 
-</html>
+    <h3>Filter</h3>
+    <div class="btn-group" style="width:100%">
+        <button class="button filterButton" data-filter="*">Alle</button>
+        <button class="button filterButton" data-filter=".film">Film</button>
+        <button class="button filterButton" data-filter=".event">Events</button>
+        <button class="button filterButton" data-filter=".grafic">Grafik</button>
+    </div>
+
+    <div class="grid">
+        <div class="element-item event" data-category="film">
+            <div class="element-inner-item">
+                Kleinkunstkabühne
+            </div>
+        </div>
+        <div class="element-item event web film" data-category="film">
+            <div class="element-inner-item">Bern scRollt</div>
+        </div>
+        <div class="element-item some grafik animation" data-category="event">
+            <div class="element-inner-item">
+                Adventskalender</div>
+        </div>
+    </div>
+
+</body></html>
