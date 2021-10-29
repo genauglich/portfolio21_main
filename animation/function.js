@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var btn = document.getElementById("btn");
+    var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
         document.getElementById("bothCards").classList.toggle("flip");
     }, false);

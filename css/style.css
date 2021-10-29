@@ -68,12 +68,16 @@ body {
     color: #000;
 }
 
-#contactButton {
-    z-index: 99;
-    width: 80px;
-    position: fixed;
+#contactBtn {
+    z-index: 9;
+    width: 80px;    position: fixed;
     right: 15px;
     bottom: 15px;
+}
+
+#contactBtn object {
+    pointer-events: none;
+
 }
 
 /*************Cards****************/
