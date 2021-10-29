@@ -12,33 +12,66 @@
 </head>
 
 <body>
-    <div class="centered">
-        <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
+
+    <div type="button" id="contactButton">
+        <object data="media/contact.svg" type="image/svg+xml">
             <!-- Für Browser ohne SVG-Unterstützung -->
         </object>
     </div>
 
-    <h3>Filter</h3>
-    <div class="btn-group" style="width:100%">
-        <button class="button filterButton" data-filter="*">Alle</button>
-        <button class="button filterButton" data-filter=".film">Film</button>
-        <button class="button filterButton" data-filter=".event">Events</button>
-        <button class="button filterButton" data-filter=".grafic">Grafik</button>
-    </div>
+    <button id="btn" type="button">Click Me!</button>
 
-    <div class="grid">
-        <div class="element-item event" data-category="film">
-            <div class="element-inner-item">
-                Kleinkunstkabühne
+    <div id="bothCards">
+        <div class="cardsFront">
+            <div class="centered">
+                <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
+                    <!-- Für Browser ohne SVG-Unterstützung -->
+                </object>
+            </div>
+
+            <div class="btn-group" style="width:100%">
+                <button class="button filterButton" data-filter="*">Alle</button>
+                <button class="button filterButton" data-filter=".film">Film</button>
+                <button class="button filterButton" data-filter=".event">Events</button>
+                <button class="button filterButton" data-filter=".grafic">Grafik</button>
+            </div>
+
+            <div class="grid">
+                <div class="element-item event" data-category="film">
+                    <div class="element-inner-item">
+                        Kleinkunstkabühne
+                    </div>
+                </div>
+
+                <div class="element-item event web film" data-category="film">
+                    <div class="element-inner-item">Bern scRollt</div>
+                </div>
+
+                <div class="element-item some grafik animation" data-category="event">
+                    <div class="element-inner-item">
+                        Adventskalender</div>
+                </div>
+                <div class="element-item event" data-category="film">
+                    <div class="element-inner-item">
+                        Kleinkunstkabühne
+                    </div>
+                </div>
+
+                <div class="element-item event web film" data-category="film">
+                    <div class="element-inner-item">Bern scRollt</div>
+                </div>
+
+                <div class="element-item some grafik animation" data-category="event">
+                    <div class="element-inner-item">
+                        Adventskalender</div>
+                </div>
+
             </div>
         </div>
-        <div class="element-item event web film" data-category="film">
-            <div class="element-inner-item">Bern scRollt</div>
-        </div>
-        <div class="element-item some grafik animation" data-category="event">
-            <div class="element-inner-item">
-                Adventskalender</div>
+        <div class="cardsBack">
+            <h1>HAllo</h1>
         </div>
     </div>
+
 
 </body></html>

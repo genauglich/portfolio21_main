@@ -6,16 +6,6 @@ body {
     box-sizing: border-box
 }
 
-
-.grid-fail {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 12px;
-    margin-top: 20%;
-}
-
 .grid {
     margin-left: -8px;
     margin-right: -8px;
@@ -72,11 +62,99 @@ body {
 }
 
 /* Add a background color on hover */
-.btn-group button:focus {
+.btn-group button:focus,
+.btn-group button:active {
     background-color: #FFF;
     color: #000;
 }
 
+#contactButton {
+    z-index: 99;
+    width: 80px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+/*************Cards****************/
+
+#bothCards {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -o-perspective: 600px;
+    perspective: 600px;
+
+}
+
+.cardsFront {
+    width: inherit;
+    height: inherit;
+    z-index: 9;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cardsBack {
+    display: block;
+    z-index: 8;
+    margin-top: -300px;
+    width: inherit;
+    height: inehrit;
+    padding: 10px;
+    color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+    background-color: #E9F0F1;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+#bothCards.flip .cardsFront {
+    z-index: 9;
+    -webkit-transform: rotateY(180deg);
+    -mox-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#bothCards.flip .cardsBack {
+    z-index: 10;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+}
 
 /*************Fonts****************/
 
