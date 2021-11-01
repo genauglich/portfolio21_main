@@ -17,8 +17,10 @@ body {
     padding-bottom: 10px;
 }
 
-
-
+.grid {
+    margin-left: -8px;
+    margin-right: -8px;
+}
 
 .element-item {
     padding: 8px;
