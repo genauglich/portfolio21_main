@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>genauglich</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="animation/isotope-docs.min.js"></script>
@@ -19,22 +20,23 @@
         </object>
     </button>
 
+    <header class="header">
+        <div class="centered">
+            <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
+                <!-- Für Browser ohne SVG-Unterstützung -->
+            </object>
+        </div>
+
+        <div class="btn-group" style="width:100%">
+            <button class="button filterButton" data-filter="*">Alle</button>
+            <button class="button filterButton" data-filter=".film">Film</button>
+            <button class="button filterButton" data-filter=".event">Events</button>
+            <button class="button filterButton" data-filter=".grafic">Grafik</button>
+        </div>
+    </header>
+
     <div id="bothCards">
         <div class="cardsFront">
-            <div class="header">
-                <div class="centered">
-                    <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
-                        <!-- Für Browser ohne SVG-Unterstützung -->
-                    </object>
-                </div>
-
-                <div class="btn-group" style="width:100%">
-                    <button class="button filterButton" data-filter="*">Alle</button>
-                    <button class="button filterButton" data-filter=".film">Film</button>
-                    <button class="button filterButton" data-filter=".event">Events</button>
-                    <button class="button filterButton" data-filter=".grafic">Grafik</button>
-                </div>
-            </div>
 
             <div class="grid">
                 <div class="element-item event" data-category="film">
@@ -204,6 +206,4 @@
     </div>
 
 
-</body>
-
-</html>
+</body></html>

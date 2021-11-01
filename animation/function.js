@@ -3,6 +3,7 @@ $(document).ready(function () {
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
         document.getElementById("bothCards").classList.toggle("flip");
+        document.querySelector("header").classList.toggle("headerUp");
     }, false);
 
 
