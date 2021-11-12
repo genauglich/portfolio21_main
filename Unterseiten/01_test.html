@@ -42,9 +42,68 @@
         </div>
         <section class="description">
             <h1>Kleinkunstkabühne</h1>
-            <h2>fdklasjdfaklsjfdlkajs</h2>
-            <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so <br> <br>
-                Was habe ich gemacht</p>
+            <h2>Meine Rolle</h2>
+            <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so </p>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="../media/projectpictures/slider/0_2M2A6005.jpg" style="width:100%">
+                    <div class="caption">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../media/projectpictures/slider/6c60a675-6572-4aa5-b98e-c2ad8154fe45.JPG" style="width:100%">
+                    <div class="caption">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="../media/projectpictures/slider/IMG_7890.JPG" style="width:100%">
+                    <div class="caption">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+
+                }
+            </script>
+            <a href="https://www.kleinkunstkabuehne.ch/">
+                <div class="endBtn"><span class="zurWebsite">
+                    Zur Website</span></div>
+            </a>
+            <a href="https://www.kleinkunstkabuehne.ch/">
+                <div class="endBtn"><span class="zurWebsite">
+                    Zurück</span></div>
+            </a>
+
         </section>
     </section>
 
