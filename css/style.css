@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+/*****************************/
+
+
 * {
     box-sizing: border-box;
 }
@@ -5,6 +10,8 @@
 body {
     background-color: #000;
     width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase
 }
 
 header {
@@ -34,6 +41,11 @@ header {
     width: 46%;
     margin: 2%;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+
     transform-origin: 0 0;
     border: 1px solid #fff;
     border-radius: 13px;
@@ -41,12 +53,11 @@ header {
 
 .element-item img {
     height: 101%;
-    overflow: hidden;
     text-align: center;
     transition: transform .25s, visibility .25s ease-in;
 }
 
-.element-item:hover img {
+.element-item img:hover {
     transform: scale(1.2);
 }
 
@@ -87,6 +98,11 @@ header {
     margin-top: 40px;
 }
 
+.textVisit {
+    padding: 5%;
+    color: #000;
+}
+
 .leftVisit {
     width: 30vw;
     text-align: left;
@@ -95,6 +111,7 @@ header {
 .rightVisit {
     width: 70vw;
     text-align: right;
+
 }
 
 /*************Buttons****************/
