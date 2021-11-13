@@ -32,7 +32,6 @@
     margin: 10px 0px;
     padding: 20px;
     height: 60px;
-    border: 2px #000 solid;
     text-align: center;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -167,8 +166,16 @@ img {
     color: darkviolet;
 }
 
+.endBtn {
+    border: 2px darkviolet solid;
+}
+
 .endBtn:hover {
     transition: 2;
     background-color: darkviolet;
     color: yellow;
 }
+
+/***********Web-Gross************/
+
+@media only screen and (min-width: 600px) {}

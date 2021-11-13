@@ -39,7 +39,6 @@ header {
     -o-transform: translate(0px, -100%);
     -ms-transform: translate(0px, -100%);
     transform: translate(0px, -100%);
-
 }
 
 .element-item {
@@ -285,4 +284,33 @@ object {
 
 body {
     color: #fff;
+}
+
+/***********Web-Gross************/
+
+@media only screen and (min-width: 600px) {
+    body {}
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .centered {
+        display: block;
+        width: 200%;
+    }
+
+    .element-item {
+        width: 29%;
+        height: 29vw;
+        margin: 2%;
+    }
+
+    .element-item img {
+        object-fit: cover;
+        width: 100%;
+    }
 }
