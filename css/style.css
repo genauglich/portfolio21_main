@@ -7,11 +7,17 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+
+}
+
 body {
     background-color: #000;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    overflow-x: hidden;
 }
 
 header {
