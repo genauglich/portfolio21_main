@@ -14,19 +14,29 @@
 
 <body ontouchstart="">
 
-    <button id="contactBtn">
+    <button class="fab" id="contactBtn">
         <object data="media/contact.svg" type="image/svg+xml">
             <!-- Für Browser ohne SVG-Unterstützung -->
         </object>
     </button>
 
+    <!--
+    <a class="fab" id="journeyBtn" href="journey/journey.html">
+        <object data="media/contact.svg" type="image/svg+xml">
+             <!--Für Browser ohne SVG-Unterstützung-->
+    </object>
+    </a>
+    -->
+
 
     <header class="header logo">
-        <div class="centered">
-            <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
-                <!-- Für Browser ohne SVG-Unterstützung -->
-            </object>
-        </div>
+        <a class="home" href="index.html">
+            <div class="centered">
+                <object data="media/logo.svg" type="image/svg+xml" style="width: 20%">
+                    <!-- Für Browser ohne SVG-Unterstützung -->
+                </object>
+            </div>
+        </a>
 
         <div class="btn-group" style="width:100%">
             <button class="button filterButton" data-filter="*">Alle</button>

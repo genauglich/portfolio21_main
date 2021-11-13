@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Montserrat&family=Vollkorn:wght@700&display=swap');
+
+body {
+    width: 100vw;
+}
+
+section,
+section .doors {
+    background-color: #111;
+}
+
+div {
+    width: 100vw;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0px 1px 40px 16px rgba(0, 0, 0, 0.36);
+
+    /*    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    */
+}
+
+#landingPage {
+    padding: 30% 0px;
+}
+
+#general {
+    background-color: #fff;
+}
+
+#ProjectOne {
+    background-color: #FFF502;
+    color: #53007A;
+    overflow: hidden;
+}
+
+#ProjectTwo {
+    background-color: #00475C;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+#imgKK {
+    position: absolute;
+    left: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#imgKK img {
+    height: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.doors {
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    position: absolute;
+    /*    background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");*/
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    z-index: 5;
+}
+
+.upper {
+    top: 0;
+}
+
+.lower {
+    bottom: 0;
+}
+
+h1 {
+    bottom: 10px;
+}
+
+
+#ProjectOne svg {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#KKschrift {
+    opacity: 0;
+}
+
+#tramOpen {
+    position: absolute;
+    transform: scale(1.8);
+    top: -87.3%;
+    left: -120%;
+}
+
+
+#tramTop {
+    width: 5%;
+    left: 50vw;
+    top: -10vh;
+    transform: scale(2);
+}
+
+#tramTop img {
+    transform: rotate(-87deg);
+
+}
+
+#ProjectTwoText {
+    opacity: 0;
+}
+
+
+/*______TYPO______*/
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+
+}
+
+section h2 {
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    z-index: 4;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 17%;
+}

@@ -50,6 +50,18 @@ $(document).ready(function () {
         }
 
         slides[slideIndex - 1].style.display = "block";
-
     }
+
+    // If cookie is set, scroll to the position saved in the cookie.
+    if ($.cookie("scroll") !== null) {
+        $(document).scrollTop($.cookie("scroll"));
+    }
+
+    // When a button is clicked...
+    $('.element-item').on("click", function () {
+
+        // Set a cookie that holds the scroll position.
+        $.cookie("scroll", $(document).scrollTop());
+
+    });
 });

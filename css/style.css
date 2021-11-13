@@ -11,7 +11,7 @@ body {
     background-color: #000;
     width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 header {
@@ -45,14 +45,13 @@ header {
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-
     transform-origin: 0 0;
     border: 1px solid #fff;
-    border-radius: 13px;
+    border-radius: 5px;
 }
 
 .element-item img {
-    height: 101%;
+    height: 102%;
     text-align: center;
     transition: transform .25s, visibility .25s ease-in;
 }
@@ -64,6 +63,10 @@ header {
 .centered {
     display: flex;
     justify-content: center;
+}
+
+object {
+    pointer-events: none;
 }
 
 .grid {
@@ -115,11 +118,15 @@ header {
 }
 
 /*************Buttons****************/
-.btn-group {
+.btn-group,
+.backBtn {
     margin: 40px 0px;
 }
 
-.btn-group button {
+.btn-group button,
+.backBtn {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     width: 25%;
     background-color: #000;
     /* Green background */
@@ -127,12 +134,17 @@ header {
     /* Green border */
     color: white;
     /* White text */
-    padding: 10px 24px;
+    padding: 10px 0px;
     /* Some padding */
     cursor: pointer;
     /* Pointer/hand icon */
     float: left;
     /* Float the buttons side by side */
+}
+
+.backBtn {
+    width: 100%;
+    text-align: center;
 }
 
 /* Clear floats (clearfix hack) */
@@ -155,17 +167,26 @@ header {
     color: #000;
 }
 
-#contactBtn {
+.fab {
     z-index: 99;
-    width: 80px;
+    width: 60px;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
     box-shadow: 0px 0px 15px 1px #fff;
     padding: 0px;
     border-radius: 100px;
     border: none;
     background-color: rgba(1, 1, 1, 0);
+
+}
+
+#contactBtn {
+    right: 20px;
+    bottom: 20px;
+}
+
+#journeyBtn {
+    left: 20px;
+    bottom: 20px;
 }
 
 #contactBtn object {
