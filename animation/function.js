@@ -2,9 +2,29 @@ $(document).ready(function () {
 
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
+        document.querySelector("header").classList.toggle("headerUp")
         document.getElementById("bothCards").classList.toggle("flip");
-        document.querySelector("header").classList.toggle("headerUp");
     }, false);
+
+
+
+    window.onscroll = function () {
+        stickyheader()
+    };
+
+    var header = document.getElementById("header");
+    var sticky = 50;
+
+    console.log(sticky);
+
+    function stickyheader() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
 
 
     let $grid = $('.grid').isotope({
@@ -49,19 +69,19 @@ $(document).ready(function () {
             slides[i].style.display = "none";
         }
 
-        slides[slideIndex - 1].style.display = "block";
+        //        slides[slideIndex - 1].style.display = "block";
     }
 
-    // If cookie is set, scroll to the position saved in the cookie.
-    if ($.cookie("scroll") !== null) {
-        $(document).scrollTop($.cookie("scroll"));
-    }
-
-    // When a button is clicked...
-    $('.element-item').on("click", function () {
-
-        // Set a cookie that holds the scroll position.
-        $.cookie("scroll", $(document).scrollTop());
-
-    });
+    //    // If cookie is set, scroll to the position saved in the cookie.
+    //    if ($.cookie("scroll") !== null) {
+    //        $(document).scrollTop($.cookie("scroll"));
+    //    }
+    //
+    //    // When a button is clicked...
+    //    $('.element-item').on("click", function () {
+    //
+    //        // Set a cookie that holds the scroll position.
+    //        $.cookie("scroll", $(document).scrollTop());
+    //
+    //    });
 });

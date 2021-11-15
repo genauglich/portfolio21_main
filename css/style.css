@@ -17,12 +17,11 @@ body {
 }
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
+    position: absolute;
     top: -80px;
     z-index: 10;
     width: 100%;
-    padding: 50px 10px 10px 10px;
+    padding: 150px 10px 10px 10px;
     background-color: #000;
     -webkit-transition: all 0.4s 0s ease;
     -moz-transition: all 0.4s 0s ease;
@@ -36,6 +35,19 @@ header {
     -o-transform: translate(0px, -100%);
     -ms-transform: translate(0px, -100%);
     transform: translate(0px, -100%);
+}
+
+.sticky {
+    position: fixed;
+    top: -130px;
+    width: 100%;
+}
+
+.noTransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
 }
 
 .element-item {
@@ -264,7 +276,8 @@ object {
     -mox-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 #bothCards.flip .cardsBack {
     z-index: 10;
