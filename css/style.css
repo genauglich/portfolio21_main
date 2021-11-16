@@ -221,6 +221,8 @@ object {
 }
 
 .cardsFront {
+    position: relative;
+    top: 180px;
     width: inherit;
     height: inherit;
     z-index: 9;

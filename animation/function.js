@@ -1,15 +1,26 @@
 $(document).ready(function () {
 
+    function flipCarts() {
+        document.querySelector("header").classList.toggle("headerUp");
+        document.getElementById("bothCards").classList.toggle("flip");
+    }
+
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
-        document.querySelector("header").classList.toggle("headerUp")
-        document.getElementById("bothCards").classList.toggle("flip");
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        setTimeout(flipCarts, 300);
     }, false);
 
 
 
     window.onscroll = function () {
+        header.classList.add('noTransition'); // Disable transitions
         stickyheader()
+        header.offsetHeight; // Trigger a reflow, flushing the CSS changes
+        header.classList.remove('noTransition'); // Re-enable transitions
     };
 
     var header = document.getElementById("header");
