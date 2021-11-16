@@ -12,11 +12,6 @@ $(document).ready(function () {
         document.getElementById("bothCards").classList.toggle("flip");
     }, false);
 
-    //    if(document.getElementById("myElmentID").classList.contains("hidden")){
-    //// I have the 'hidden' class
-    //}
-
-
 
     window.onscroll = function () {
         header.classList.add('noTransition'); // Disable transitions
@@ -26,7 +21,12 @@ $(document).ready(function () {
     };
 
     var header = document.getElementById("header");
-    var sticky = 80;
+
+    var scrollTop = $(window).scrollTop(),
+        elementOffset = $('header').offset().top,
+        sticky = (elementOffset - scrollTop);
+
+    var sticky = 0;
 
     function stickyheader() {
         if (window.pageYOffset > sticky) {
@@ -35,7 +35,6 @@ $(document).ready(function () {
             header.classList.remove("sticky");
         }
     }
-
 
 
     let $grid = $('.grid').isotope({
@@ -80,7 +79,7 @@ $(document).ready(function () {
             slides[i].style.display = "none";
         }
 
-        //        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].style.display = "block";
     }
 
     //    // If cookie is set, scroll to the position saved in the cookie.

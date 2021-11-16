@@ -18,10 +18,11 @@ body {
 
 header {
     position: absolute;
-    top: -60px;
+    top: 0px;
     z-index: 10;
     width: 100%;
-    padding: 150px 10px 10px 10px;
+    height: 200px;
+    padding: 20px 10px 10px 10px;
     background-color: #000;
     -webkit-transition: all 0.4s 0s ease;
     -moz-transition: all 0.4s 0s ease;
@@ -39,7 +40,7 @@ header {
 
 .sticky {
     position: fixed;
-    top: -140px;
+    top: 0px;
     width: 100%;
 }
 
@@ -67,6 +68,9 @@ header {
 .element-item img {
     height: 102%;
     text-align: center;
+    -webkit-transition: transform .25s, visibility .25s ease-in;
+    -moz-transition: transform .25s, visibility .25s ease-in;
+    -o-transition: transform .25s, visibility .25s ease-in;
     transition: transform .25s, visibility .25s ease-in;
 }
 
@@ -77,6 +81,7 @@ header {
 .centered {
     display: flex;
     justify-content: center;
+    height: 100px;
 }
 
 object {
@@ -84,7 +89,7 @@ object {
 }
 
 .grid {
-    top: 130px;
+    top: 0px;
 }
 
 #536 {
@@ -222,7 +227,7 @@ object {
 
 .cardsFront {
     position: relative;
-    top: 180px;
+    top: 190px;
     width: inherit;
     height: inherit;
     z-index: 9;
@@ -304,9 +309,15 @@ body {
 
     header {
         display: flex;
+        height: 150px;
         flex-direction: row;
         align-items: center;
         padding: 5%;
+        top: 0px;
+    }
+
+    .sticky {
+        top: 0px;
     }
 
     .centered {
@@ -323,5 +334,9 @@ body {
     .element-item img {
         object-fit: cover;
         width: 100%;
+    }
+
+    .cardsFront {
+        top: 150px;
     }
 }
