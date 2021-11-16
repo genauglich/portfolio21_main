@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
-    function flipCarts() {
-        document.querySelector("header").classList.toggle("headerUp");
-        document.getElementById("bothCards").classList.toggle("flip");
-    }
+
 
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
@@ -11,8 +8,13 @@ $(document).ready(function () {
             top: 0,
             behavior: 'smooth'
         });
-        setTimeout(flipCarts, 300);
+        document.querySelector("header").classList.toggle("headerUp");
+        document.getElementById("bothCards").classList.toggle("flip");
     }, false);
+
+    //    if(document.getElementById("myElmentID").classList.contains("hidden")){
+    //// I have the 'hidden' class
+    //}
 
 
 
@@ -24,9 +26,7 @@ $(document).ready(function () {
     };
 
     var header = document.getElementById("header");
-    var sticky = 50;
-
-    console.log(sticky);
+    var sticky = 80;
 
     function stickyheader() {
         if (window.pageYOffset > sticky) {
