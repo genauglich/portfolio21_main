@@ -1,18 +1,23 @@
+.header {
+    box-shadow: none;
+}
+
 .projectSection {
     z-index: 11;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 100vw;
-    top: 250px;
+    top: 30vh;
     background-color: yellow;
-    box-shadow: 0px 0px 25px 5px #FFF;
+    box-shadow: 0px 4px 25px 0px #000;
     padding: 20p
 }
 
 .projectPic {
+    position: relative;
     width: 100%;
-    height: 200px;
+    height: 70vh;
     top: 0px;
     background: url("../media/projectpictures/IMG_9451.jpg");
     background-size: cover;
@@ -41,6 +46,65 @@ a {
     text-decoration: none;
 }
 
+/******scroll Down*********/
+
+.scrollbtn {
+    padding-top: 70px;
+    margin: 0px auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 20px;
+}
+
+.scrollbtn span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
 
 
 /******Font*********/
@@ -87,8 +151,8 @@ img {
 .slideshow-container {
     max-width: 100%;
     position: relative;
-    margin-top: 10%;
-    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* Next & previous buttons */
@@ -152,13 +216,14 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 600px) {
 
     .prev,
     .next,
     .caption {
         font-size: 11px
     }
+
 }
 
 /******Anapassen*********/
@@ -174,6 +239,15 @@ img {
     transition: 2;
     background-color: darkviolet;
     color: yellow;
+}
+
+.scrollbtn span {
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.scrollbtn {
+    color: #fff;
 }
 
 /***********Web-Gross************/

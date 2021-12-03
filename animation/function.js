@@ -82,6 +82,16 @@ $(document).ready(function () {
         slides[slideIndex - 1].style.display = "block";
     }
 
+
+    $(function () {
+        $('.scrollbtn').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'swing');
+        });
+    });
+
     //    // If cookie is set, scroll to the position saved in the cookie.
     //    if ($.cookie("scroll") !== null) {
     //        $(document).scrollTop($.cookie("scroll"));
