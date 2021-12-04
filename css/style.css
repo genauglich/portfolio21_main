@@ -67,7 +67,7 @@ header {
     transform-origin: 0 0;
     /*    border: 1px solid #000;*/
     border-radius: 5px;
-    box-shadow: 0 0 5px 0px #000;
+    box-shadow: rgb(100 100 100 / 20%) 0 0 7px 0px;
 }
 
 .element-item img {
@@ -168,7 +168,6 @@ object {
 }
 
 
-
 /* Clear floats (clearfix hack) */
 .btn-group:after {
     content: "";
@@ -231,7 +230,7 @@ object {
 
 .cardsFront {
     position: relative;
-    top: 190px;
+    top: 205px;
     width: inherit;
     height: inherit;
     z-index: 9;

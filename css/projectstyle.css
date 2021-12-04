@@ -9,9 +9,7 @@
     position: relative;
     width: 100vw;
     top: 30vh;
-    background-color: yellow;
     box-shadow: 0px 4px 25px 0px #000;
-    padding: 20p
 }
 
 .projectPic {
@@ -19,10 +17,6 @@
     width: 100%;
     height: 70vh;
     top: 0px;
-    background: url("../media/projectpictures/IMG_9451.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .description {
@@ -223,32 +217,9 @@ img {
     .caption {
         font-size: 11px
     }
-
 }
 
-/******Anapassen*********/
-.projectSection {
-    color: darkviolet;
-}
 
-.endBtn {
-    border: 2px darkviolet solid;
-}
-
-.endBtn:hover {
-    transition: 2;
-    background-color: darkviolet;
-    color: yellow;
-}
-
-.scrollbtn span {
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-}
-
-.scrollbtn {
-    color: #fff;
-}
 
 /***********Web-Gross************/
 

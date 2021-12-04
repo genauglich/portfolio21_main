@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genauglich</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projectstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../animation/isotope-docs.min.js"></script>
+    <script src="../animation/function.js"></script>
+</head>
+
+<body ontouchstart="">
+
+    <!--   <button id="contactBtn">
+        <object data="media/contact.svg" type="image/svg+xml">
+            Für Browser ohne SVG-Unterstützung 
+        </object>
+    </button>
+-->
+    <button class="fab" id="contactBtn">
+        <object data="media/contact.svg" type="image/svg+xml">
+            <!-- Für Browser ohne SVG-Unterstützung -->
+        </object>
+    </button>
+
+
+    <header id="header" class="header logo">
+        <a class="home" href="../index.html">
+            <div class="centered">
+                <object data="../media/logo.svg" type="image/svg+xml" style="width: 20%">
+                    <!-- Für Browser ohne SVG-Unterstützung -->
+                </object>
+            </div>
+        </a>
+
+        <div class="btn-group" style="width:100%">
+            <a class="backBtn" href="../index.html" class="button filterButton">Zurück</a>
+        </div>
+    </header>
+
+
+
+    <section class="projectSection">
+
+
+        <div class="projectPic">
+            <a class="scrollbtn" href="#topProject"><span></span>Scroll</a>
+
+        </div>
+        <section id="topProject" class="description">
+            <h1>Hei du Beeri</h1>
+            <h2>Meine Rolle</h2>
+            <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so </p>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="../media/projects/beeri/slider/slider1_beeri.jpg" alt="Grafik des beeri auf ein Ts-Shirt gedruckt" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../media/projects/beeri/slider/slider2_beeri.jpg" alt="Das Beeri-Botiv auf einer Postkarte" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+
+                }
+
+            </script>
+            <a href="mailto:mailto:nico.staehli@hispeed.ch?subject=Bestellung Beeri-Produkte">
+                <div class="endBtn">
+                    Bestellen</div>
+            </a>
+            <a href="../index.html">
+                <div class="endBtn">
+                    Zurück</div>
+            </a>
+
+        </section>
+    </section>
+
+
+    <style>
+        .projectPic {
+            background: url("../media/projects/beeri/titelbild_beeri.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .projectSection {
+            color: #000;
+            background-color: #fff;
+
+        }
+
+        span:hover {
+            color: #fff !important;
+        }
+
+        .endBtn {
+            border: 2px #000 solid;
+            color: #000;
+        }
+
+        .endBtn:hover {
+            transition: 2;
+            background-color: #000;
+            color: #fff !important;
+        }
+
+        .scrollbtn span {
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .scrollbtn {
+            color: #ccc;
+        }
+
+    </style>
+
+</body>
+
+</html>
