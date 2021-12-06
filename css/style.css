@@ -138,6 +138,11 @@ object {
 }
 
 /*************Buttons****************/
+.button.is-checked {
+    color: #fff;
+    background-color: #000;
+}
+
 .btn-group,
 .backBtn {
     margin: 10px 0px;
@@ -181,13 +186,21 @@ object {
 }
 
 /* Add a background color on hover */
-.btn-group button:focus,
+
 .btn-group button:hover,
-.btn-group button:active,
 .backBtn:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+.btn-group button:active,
+.btn-group button:focus,
+.backBtn:active {
     background-color: #000;
     color: #fff;
 }
+
+
 
 .fab {
     z-index: 99;

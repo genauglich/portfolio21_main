@@ -51,9 +51,19 @@ $(document).ready(function () {
             console.log(filterOption);
             $grid.isotope({
                 filter: filterOption,
-            })
+            });
         })
     }
+
+    // change is-checked class on buttons
+    $('.btn-group').each(function (i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function () {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+        });
+    });
+
 
     var slideIndex = 1;
     showSlides(slideIndex);
