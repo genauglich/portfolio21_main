@@ -187,18 +187,7 @@ object {
 
 /* Add a background color on hover */
 
-.btn-group button:hover,
-.backBtn:hover {
-    background-color: #eee;
-    color: #000;
-}
 
-.btn-group button:active,
-.btn-group button:focus,
-.backBtn:active {
-    background-color: #000;
-    color: #fff;
-}
 
 
 
@@ -365,6 +354,19 @@ body {
         width: 50vw;
         box-shadow: 0px 0px 11px 0px #000;
 
+    }
+
+    .btn-group button:hover,
+    .backBtn:hover {
+        background-color: #eee;
+        color: #000;
+    }
+
+    .btn-group button:active,
+    .btn-group button:focus,
+    .backBtn:active {
+        background-color: #000;
+        color: #fff;
     }
 
 }
