@@ -137,6 +137,42 @@ object {
     border-bottom-width: 1px;
 }
 
+/*************BacktoTop****************/
+#backtotop {
+    position: fixed;
+    top: 10vh;
+    right: 4%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ea5820;
+    border: 1px solid #ea5820;
+    width: 48px;
+    height: 95px;
+    border-radius: 5px;
+    z-index: 3;
+    align-items: flex-end;
+    -webkit-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+
+
+.bttDown {
+    -moz-transform: translate(0px, 15vh);
+    -webkit-transform: translate(0px, 15vh);
+    -o-transform: translate(0px, 15vh);
+    -ms-transform: translate(0px, 15vh);
+    transform: translate(0px, 15vh);
+}
+
+.bttDown:hover {
+    background-color: red;
+}
+
 /*************Buttons****************/
 .button.is-checked {
     color: #fff;
@@ -195,12 +231,34 @@ object {
     z-index: 99;
     width: 60px;
     position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     box-shadow: 0px 0px 15px 1px #000;
     padding: 0px;
     border-radius: 100px;
     border: none;
-    background-color: rgba(1, 1, 1, 0);
 
+    width: 70px;
+    height: 70px;
+    background-color: #ea5820;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+
+    font-size: 1.2rem;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    cursor: alias;
+}
+
+.fab.hidden-cv .cv {
+    display: none;
+}
+
+.fab:not(.hidden-cv) .back {
+    display: none;
 }
 
 #contactBtn {
@@ -283,7 +341,8 @@ object {
 }
 
 
-#bothCards.flip .cardsFront {
+#bothCards.flip .cardsFront,
+#contactBtn.flip {
     z-index: 9;
     -webkit-transform: rotateY(180deg);
     -mox-transform: rotateY(180deg);
@@ -292,7 +351,8 @@ object {
     overflow: hidden;
 }
 
-#bothCards.flip .cardsBack {
+#bothCards.flip .cardsBack,
+#contactBtn.flip {
     z-index: 10;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
@@ -315,7 +375,7 @@ body {
 
     header {
         display: flex;
-        height: 150px;
+        height: 20vh;
         flex-direction: row;
         align-items: center;
         padding: 5%;
@@ -345,10 +405,23 @@ body {
     }
 
     .cardsFront {
-        top: 150px;
+        top: 20vh;
     }
 
     .cardsBack {}
+
+    .fab {
+        width: 130px;
+        height: 130px;
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 126px;
+    }
+
+    .back svg {
+        width: 50px;
+        height: 50px;
+    }
 
     .visitenkarte {
         width: 50vw;

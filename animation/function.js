@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
 
-
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
         window.scrollTo({
@@ -10,12 +9,14 @@ $(document).ready(function () {
         });
         document.querySelector("header").classList.toggle("headerUp");
         document.getElementById("bothCards").classList.toggle("flip");
+        document.getElementById("contactBtn").classList.toggle("hidden-cv");
     }, false);
 
 
     window.onscroll = function () {
         header.classList.add('noTransition'); // Disable transitions
         stickyheader()
+        showbtt()
         header.offsetHeight; // Trigger a reflow, flushing the CSS changes
         header.classList.remove('noTransition'); // Re-enable transitions
     };
@@ -35,6 +36,17 @@ $(document).ready(function () {
             header.classList.remove("sticky");
         }
     }
+
+    function showbtt() {
+        if (window.pageYOffset > 1000) {
+            document.getElementById("backtotop").classList.add("bttDown");
+        } else {
+            document.getElementById("backtotop").classList.remove("bttDown");
+
+        }
+    }
+
+
 
 
     let $grid = $('.grid').isotope({
@@ -101,6 +113,14 @@ $(document).ready(function () {
             }, 500, 'swing');
         });
     });
+
+    $("#backtotop").click(function () {
+        console.log("asdfasfd")
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(body).offset().top
+        }, 2000);
+    });
+
 
     //    // If cookie is set, scroll to the position saved in the cookie.
     //    if ($.cookie("scroll") !== null) {
