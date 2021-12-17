@@ -1,5 +1,9 @@
 $(document).ready(function () {
-
+    const backToTopBtn = document.querySelector('#backtotop');
+    backToTopBtn.addEventListener('click', () => {
+        console.error('top')
+        window.scrollTo(0, 0);
+    });
 
     var btn = document.getElementById("contactBtn");
     btn.addEventListener("click", function () {
@@ -114,12 +118,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#backtotop").click(function () {
-        console.log("asdfasfd")
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $(body).offset().top
-        }, 2000);
-    });
+
 
 
     //    // If cookie is set, scroll to the position saved in the cookie.
