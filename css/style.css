@@ -386,6 +386,24 @@ body {
         top: 0px;
     }
 
+    #backtotop {
+        top: 6vh;
+        right: 4%;
+        width: 48px;
+        height: 95px;
+        border-radius: 5px;
+    }
+
+
+
+    #backtotop.bttDown {
+        -moz-transform: translate(0px, 10vh);
+        -webkit-transform: translate(0px, 10vh);
+        -o-transform: translate(0px, 10vh);
+        -ms-transform: translate(0px, 10vh);
+        transform: translate(0px, 10vh);
+    }
+
     .sticky {
         top: 0px;
     }
@@ -430,7 +448,6 @@ body {
     .visitenkarte {
         width: 50vw;
         box-shadow: 0px 0px 11px 0px #000;
-
     }
 
     .btn-group button:hover,

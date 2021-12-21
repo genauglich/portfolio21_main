@@ -26,6 +26,10 @@
     padding: 5%;
 }
 
+#contactBtn {
+    display: none;
+}
+
 .endBtn {
     width: 100%;
     margin: 10px 0px;
@@ -139,12 +143,12 @@ p {
 
 /******bildslider*********/
 .mySlides {
-    display: none
+    display: none;
 }
 
 img {
     vertical-align: middle;
-    max-height: 300px;
+    max-height: 100%;
     object-fit: cover;
     object-position: 50%;
 }
@@ -230,4 +234,12 @@ img {
 
 /***********Web-Gross************/
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .slideshow-container {
+        height: 750px;
+    }
+
+    .mySlides {
+        height: 100%;
+    }
+}
