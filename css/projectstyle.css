@@ -235,9 +235,7 @@ img {
 /***********Web-Gross************/
 
 @media only screen and (min-width: 600px) {
-    .slideshow-container {
-        height: 750px;
-    }
+
 
     .mySlides {
         height: 100%;

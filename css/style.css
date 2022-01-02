@@ -375,7 +375,6 @@ body {
 /***********Web-Gross************/
 
 @media only screen and (min-width: 600px) {
-    body {}
 
     header {
         display: flex;
@@ -393,8 +392,6 @@ body {
         height: 95px;
         border-radius: 5px;
     }
-
-
 
     #backtotop.bttDown {
         -moz-transform: translate(0px, 10vh);
@@ -430,7 +427,9 @@ body {
         top: 20vh;
     }
 
-    .cardsBack {}
+    .cardsBack {
+        overflow: inherit !important;
+    }
 
     .fab {
         width: 130px;
@@ -448,6 +447,7 @@ body {
     .visitenkarte {
         width: 50vw;
         box-shadow: 0px 0px 11px 0px #000;
+        overflow: hidden;
     }
 
     .btn-group button:hover,

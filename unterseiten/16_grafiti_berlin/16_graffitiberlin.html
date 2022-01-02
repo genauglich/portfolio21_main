@@ -4,29 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleinkunstkabuehne</title>
+    <title>Graffiti Berlin</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/projectstyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../animation/isotope-docs.min.js"></script>
+    <script src="../../animation/isotope-docs.min.js"></script>
     <script src="../function_sub.js"></script>
 </head>
 
 <body ontouchstart="">
 
-    <!--   <button id="contactBtn">
-        <object data="media/contact.svg" type="image/svg+xml">
-            Für Browser ohne SVG-Unterstützung 
-        </object>
-    </button>
--->
     <button class="fab" id="contactBtn">
         <object data="media/contact.svg" type="image/svg+xml">
             <!-- Für Browser ohne SVG-Unterstützung -->
         </object>
     </button>
-
 
     <header id="header" class="header logo">
         <a class="home" href="../../index.html">
@@ -36,39 +29,37 @@
                 </object>
             </div>
         </a>
+
         <div class="btn-group" style="width:100%">
             <a class="backBtn" href="../../index.html" class="button filterButton">Zurück</a>
         </div>
     </header>
 
-
-
     <section class="projectSection">
-
 
         <div class="projectPic">
             <a class="scrollbtn" href="#topProject"><span></span>Scroll</a>
 
         </div>
         <section id="topProject" class="description">
-            <h1>Kleinkunstkabühne</h1>
+            <h1>Bärn scRollt</h1>
             <h2>Meine Rolle</h2>
             <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so </p>
 
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                    <img src="media/slider/slider1_kabuehne.jpg" style="width:100%" alt="bilder Kleinkunstkabühne">
+                    <img src="media/slider/slider_graffitiinberlin_1.jpeg" alt="Dreharbeiten hinter den Kulissen bei der Berliner Mauer" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <img src="media/slider/slider2_kabuehne.JPG" style="width:100%" alt="Impressionen der Kleinkunstkabühne">
+                    <img src="media/slider/slider_graffitiinberlin_2.jpeg" alt="Gruppenfoto des Filmteams" style="width:100%">
                 </div>
-
 
                 <div class="mySlides fade">
-                    <img src="media/slider/slider3_kabuehne.jpg" style="width:100%" alt="Impressionen der Kleinkunstkabühne">
+                    <img src="media/slider/slider_graffitiinberlin_3.jpeg" alt="Dreharbeiten bei der Entfernung von Graffitis in Berlin" style="width:100%">
                 </div>
+
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -103,10 +94,11 @@
                     slides[slideIndex - 1].style.display = "block";
 
                 }
+
             </script>
-            <a target="_blank" href="https://www.kleinkunstkabuehne.ch/">
+            <a target="_blank" href="https://www.youtube.com/watch?v=THRR1LyvDaI&ab_channel=genauglich">
                 <div class="endBtn">
-                    Zur Website</div>
+                    Zum Film</div>
             </a>
             <a href="../../index.html">
                 <div class="endBtn">
@@ -119,40 +111,44 @@
 
     <style>
         .projectPic {
-            background: url("media/titelbild_Kabuehne.jpg");
+            background: url("media/titelbild_graffitiberlin.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-
         }
 
         .projectSection {
-            color: darkviolet !important;
-            background-color: yellow;
+            color: #06494B;
+            background-color: #FAC06D;
+
         }
 
-        span {
-            color: darkviolet;
+        span:hover {
+            color: #FAC06D !important;
         }
 
         .endBtn {
-            border: 2px darkviolet solid;
+            border: 2px #06494B solid;
+            color: #06494B;
         }
 
         .endBtn:hover {
             transition: 2;
-            background-color: darkviolet;
-            color: yellow;
+            background-color: #06494B;
+            color: #FAC06D !important;
         }
 
         .scrollbtn span {
-            border-left: 1px solid darkviolet;
-            border-bottom: 1px solid darkviolet;
+            border-left: 1px solid #06494B;
+            border-bottom: 1px solid #06494B;
         }
 
         .scrollbtn {
-            color: darkviolet;
+            color: #FAC06D;
         }
+
     </style>
 
-</body></html>
+</body>
+
+</html>

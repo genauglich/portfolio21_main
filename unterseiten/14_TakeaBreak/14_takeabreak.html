@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleinkunstkabuehne</title>
+    <title>Take a break</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/projectstyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../animation/isotope-docs.min.js"></script>
+    <script src="../../animation/isotope-docs.min.js"></script>
     <script src="../function_sub.js"></script>
 </head>
 
@@ -51,62 +51,14 @@
 
         </div>
         <section id="topProject" class="description">
-            <h1>Kleinkunstkabühne</h1>
+            <h1>Take a break</h1>
             <h2>Meine Rolle</h2>
             <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so </p>
 
-            <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <img src="media/slider/slider1_kabuehne.jpg" style="width:100%" alt="bilder Kleinkunstkabühne">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="media/slider/slider2_kabuehne.JPG" style="width:100%" alt="Impressionen der Kleinkunstkabühne">
-                </div>
-
-
-                <div class="mySlides fade">
-                    <img src="media/slider/slider3_kabuehne.jpg" style="width:100%" alt="Impressionen der Kleinkunstkabühne">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("mySlides");
-                    if (n > slides.length) {
-                        slideIndex = 1
-                    }
-                    if (n < 1) {
-                        slideIndex = slides.length
-                    }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-
-                    slides[slideIndex - 1].style.display = "block";
-
-                }
-            </script>
-            <a target="_blank" href="https://www.kleinkunstkabuehne.ch/">
+            <a target="_blank" href="https://www.youtube.com/watch?v=09obfaiCek0&ab_channel=genauglich">
                 <div class="endBtn">
-                    Zur Website</div>
+                    Zum Film</div>
             </a>
             <a href="../../index.html">
                 <div class="endBtn">
@@ -119,7 +71,7 @@
 
     <style>
         .projectPic {
-            background: url("media/titelbild_Kabuehne.jpg");
+            background: url("media/titelbild_takeabreak.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -127,31 +79,32 @@
         }
 
         .projectSection {
-            color: darkviolet !important;
-            background-color: yellow;
+            color: #000 !important;
+            background-color: #B7BDDC;
         }
 
         span {
-            color: darkviolet;
+            color: #000;
         }
 
         .endBtn {
-            border: 2px darkviolet solid;
+            border: 2px #000 solid;
+            color: #000;
         }
 
         .endBtn:hover {
             transition: 2;
-            background-color: darkviolet;
-            color: yellow;
+            background-color: #000;
+            color: #B7BDDC;
         }
 
         .scrollbtn span {
-            border-left: 1px solid darkviolet;
-            border-bottom: 1px solid darkviolet;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #000;
         }
 
         .scrollbtn {
-            color: darkviolet;
+            color: #000;
         }
     </style>
 
