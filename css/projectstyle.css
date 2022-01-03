@@ -136,11 +136,6 @@ p {
     letter-spacing: 1.3px;
 }
 
-.caption {
-    text-align: center;
-    margin-top: 10px;
-}
-
 /******bildslider*********/
 .mySlides {
     display: none;
@@ -158,6 +153,11 @@ img {
     position: relative;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.caption {
+    text-align: end;
+    font-size: 0.8rem;
 }
 
 /* Next & previous buttons */
@@ -239,5 +239,9 @@ img {
 
     .mySlides {
         height: 100%;
+    }
+
+    .caption {
+        font-size: 1rem;
     }
 }

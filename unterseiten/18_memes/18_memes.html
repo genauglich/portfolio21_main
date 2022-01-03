@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Take a break</title>
+    <title>MEMES</title>
     <link rel="icon" type="image/x-icon" href="/favicon.png">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
@@ -37,6 +37,7 @@
                 </object>
             </div>
         </a>
+
         <div class="btn-group" style="width:100%">
             <a class="backBtn" href="../../index.html" class="button filterButton">Zurück</a>
         </div>
@@ -52,14 +53,59 @@
 
         </div>
         <section id="topProject" class="description">
-            <h1>Take a break</h1>
+            <h1>Drone Shots</h1>
             <h2>Meine Rolle</h2>
             <p>DAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und soDAs ist die Beschreibung und so </p>
 
+            <!--
+            <div class="slideshow-container">
 
-            <a target="_blank" href="https://www.youtube.com/watch?v=09obfaiCek0&ab_channel=genauglich">
+                <div class="mySlides fade">
+                    <img src="media/slider/slider1_beeri.jpg" alt="Grafik des beeri auf ein Ts-Shirt gedruckt" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="media/slider/slider2_beeri.jpg" alt="Das Beeri-Botiv auf einer Postkarte" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+
+                }
+            </script>
+-->
+            <a href="https://9gag.com/">
                 <div class="endBtn">
-                    Zum Film</div>
+                    9GAG</div>
             </a>
             <a href="../../index.html">
                 <div class="endBtn">
@@ -72,20 +118,26 @@
 
     <style>
         .projectPic {
-            background: url("media/titelbild_takeabreak.jpg");
+            background: url("media/titelbild_memes.jpg");
             background-size: cover;
-            background-position: center;
+            background-position: top;
             background-repeat: no-repeat;
-
         }
 
         .projectSection {
-            color: #000 !important;
-            background-color: #B7BDDC;
+            color: #000;
+            background-color: #faf;
+            font-family: impact;
+            text-decoration-style: dotted;
+            text-decoration: underline;
+            text-decoration-line: overline;
+            text-decoration-color: blue;
+
+
         }
 
-        span {
-            color: #000;
+        span:hover {
+            color: #faf !important;
         }
 
         .endBtn {
@@ -96,7 +148,8 @@
         .endBtn:hover {
             transition: 2;
             background-color: #000;
-            color: #B7BDDC;
+            color: #faf !important;
+
         }
 
         .scrollbtn span {
@@ -105,7 +158,7 @@
         }
 
         .scrollbtn {
-            color: #000;
+            color: #ccc;
         }
     </style>
 
