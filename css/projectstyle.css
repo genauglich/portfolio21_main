@@ -49,6 +49,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /******scroll Down*********/
@@ -125,9 +126,16 @@ h1 {
 
 h2 {
     font-size: 4vw;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 10px;
     font-style: italic;
+    line-height: 23px;
+}
+
+h3 {
+    font-size: 3vw;
+    margin-bottom: 25px;
+    text-transform: none;
 }
 
 p {
@@ -228,6 +236,29 @@ img {
     .caption {
         font-size: 11px
     }
+
+    h1 {
+        margin-bottom: 0px 0px;
+    }
+
+    h2 {
+        font-size: 3vw;
+        margin-bottom: 22px;
+        margin-top: 10px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 2vw;
+        margin-bottom: 35px;
+        text-transform: none;
+    }
+
+    .slideshow-container {
+        margin-top: 2%;
+    }
+
 }
 
 
