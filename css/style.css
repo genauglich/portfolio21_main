@@ -29,9 +29,6 @@ header {
     -o-transition: all 0.4s 0s ease;
     transition: all 0.4s 0s ease;
     box-shadow: 0px -13px 20px 0px #000;
-
-
-
 }
 
 .headerUp {
@@ -113,7 +110,8 @@ object {
 
 
 .portrait {
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 .portrait img {
@@ -148,7 +146,8 @@ object {
 }
 
 .visitTitle {
-    margin-top: 5px margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .bar,
@@ -169,6 +168,45 @@ object {
     width: 50%;
 }
 
+.visitKachel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 20px 0px;
+}
+
+.orange {
+    background-color: #ea5820;
+    color: #f9f9f9;
+}
+
+.visitKachel-title {
+    box-sizing: border-box;
+    text-align: left;
+    color: #fff;
+    background-color: #ea5820;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.white {
+    background-color: #f9f9f9;
+    color: #CD4813;
+
+}
+
+.visitKachel p,
+.visitKachel-title {
+    padding-left: 20px;
+    padding-left: 20px;
+}
 
 /*************BacktoTop****************/
 #backtotop {
@@ -190,9 +228,8 @@ object {
     -moz-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -o-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
+    box-shadow: rgb(255 255 255) 0 0 11px 2px;
 }
-
 
 
 #backtotop.bttDown {
@@ -207,6 +244,12 @@ object {
 .bttDown:hover {
     background-color: red;
 }
+
+.hidebtt {
+    display: none;
+    top: -19vh !important;
+}
+
 
 /*************Buttons****************/
 .button.is-checked {
@@ -354,7 +397,6 @@ object {
     margin-top: -100vh;
     width: inherit;
     color: rgba(255, 0, 0, 0.5);
-    text-align: center;
     background-color: #fff;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
@@ -431,6 +473,10 @@ body {
         transform: translate(0px, 10vh);
     }
 
+    .hidebtt {
+        top: -13vh !important;
+    }
+
     .sticky {
         top: 0px;
     }
@@ -492,5 +538,6 @@ body {
         background-color: #000;
         color: #fff;
     }
+
 
 }

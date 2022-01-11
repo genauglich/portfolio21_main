@@ -14,6 +14,7 @@ $(document).ready(function () {
         document.querySelector("header").classList.toggle("headerUp");
         document.getElementById("bothCards").classList.toggle("flip");
         document.getElementById("contactBtn").classList.toggle("hidden-cv");
+        document.getElementById("backtotop").classList.toggle("hidebtt");
     }, false);
 
 
