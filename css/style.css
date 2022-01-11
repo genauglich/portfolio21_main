@@ -208,6 +208,19 @@ object {
     padding-left: 20px;
 }
 
+.fa {
+    color: #000;
+    font-size: 30px !important;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 2px;
+
+
+}
+
 /*************BacktoTop****************/
 #backtotop {
     opacity: 0;
@@ -228,8 +241,9 @@ object {
     -moz-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -o-transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all 0.4s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: rgb(255 255 255) 0 0 11px 2px;
+    box-shadow: rgb(0 0 0 / 20%) 0 0 13px 6px;
 }
+
 
 
 #backtotop.bttDown {
@@ -319,7 +333,8 @@ object {
 
     width: 70px;
     height: 70px;
-    background-color: #ea5820;
+    background-color: rgba(255, 255, 255, 0.9);
+    ;
     border-radius: 50%;
     box-shadow: 0 6px 10px 0 #666;
     transition: all 0.1s ease-in-out;
@@ -351,6 +366,13 @@ object {
 
 #contactBtn object {
     pointer-events: none;
+}
+
+.cv img {
+    width: 112%;
+    position: relative;
+    top: 11px;
+    left: -7px
 }
 
 /*************Cards****************/
@@ -514,6 +536,12 @@ body {
         font-weight: 300;
         line-height: 126px;
     }
+
+    .cv img {
+        top: 16px;
+        left: -14px;
+    }
+
 
     .back svg {
         width: 50px;
