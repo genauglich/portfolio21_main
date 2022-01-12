@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -137,6 +142,19 @@ object {
     background-color: #fff;
 }
 
+.textVisit div,
+.textVisit p {
+    text-transform: none;
+    font-size: 1rem;
+
+}
+
+.textVisit h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
 .textVisit p {
     text-transform: none;
     margin-top: 15px;
@@ -185,8 +203,8 @@ object {
 }
 
 .orange {
-    background-color: #ea5820;
-    color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #000;
 }
 
 .visitKachel-title {
@@ -198,13 +216,13 @@ object {
     padding-bottom: 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-.white {
     background-color: #f9f9f9;
-    color: #CD4813;
+    border-bottom: 4px solid #ea5820;
+    color: #000;
+    font-weight: 600;
 
 }
+
 
 .visitKachel p,
 .visitKachel-title {
@@ -271,7 +289,7 @@ object {
 
 /*************Buttons****************/
 .button.is-checked {
-    color: #fff;
+    color: #ea5820;
     background-color: #000;
 }
 
@@ -334,11 +352,9 @@ object {
     padding: 0px;
     border-radius: 100px;
     border: none;
-
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
     background-color: rgba(255, 255, 255, 0.9);
-    ;
     border-radius: 50%;
     box-shadow: 0 6px 10px 0 #666;
     transition: all 0.1s ease-in-out;
