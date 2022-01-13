@@ -286,11 +286,26 @@ object {
     top: -19vh !important;
 }
 
+.none {
+    display: none !important;
+}
+
 
 /*************Buttons****************/
 .button.is-checked {
     color: #ea5820;
     background-color: #000;
+}
+
+#leftFilter {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+#rightFilter {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .btn-group,

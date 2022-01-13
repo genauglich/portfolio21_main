@@ -15,6 +15,7 @@ $(document).ready(function () {
         document.getElementById("bothCards").classList.toggle("flip");
         document.getElementById("contactBtn").classList.toggle("hidden-cv");
         document.getElementById("backtotop").classList.toggle("hidebtt");
+        document.getElementById("cardsBack").classList.toggle("none");
     }, false);
 
 

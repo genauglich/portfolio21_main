@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>genauglich</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <meta name="description" content="Das bin ich: GenauGlich und doch anders. Mein Portfolio gibt dir Auskunft über meine interessantesten Projekte und über mich.">
+    <meta name="author" content="Nico Stähli">
+    <meta name="keywords" content="genauglich, genau, glich, GenauGlich, Genauglich, Grafik, Nico, Stähli, Nico Stähli, Dronen, Design, Präsentation, Kleinkunstkabühne, Kleinkunstkabuehne, Film, Multimedia Production, Multimedia, MMP, Portfolio, Visitenkarte, CV, Medienproduktion, Grafiker, Brand Design, Design, Gestaltung, Bern, Schweiz, Bremgarten bei Bern, Bern Scrollt, Swisscom, MfK">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,10 +52,10 @@
         </a>
 
         <div class="btn-group" style="width:100%">
-            <button class="button filterButton is-checked" data-filter="*">Alle</button>
+            <button id="leftFilter" class="button filterButton is-checked" data-filter="*">Alle</button>
             <button class="button filterButton" data-filter=".film">Film</button>
             <button class="button filterButton" data-filter=".event">Events</button>
-            <button class="button filterButton" data-filter=".grafic">Grafik</button>
+            <button id="rightFilter" class="button filterButton" data-filter=".grafic">Grafik</button>
         </div>
     </header>
 
@@ -145,7 +149,7 @@
 
             </div>
         </div>
-        <div class="cardsBack">
+        <div id="cardsBack" class="cardsBack none">
             <div class="visitenkarte">
                 <div class="portrait">
                     <div>
@@ -260,7 +264,7 @@
                     </div>
                     <div class="visitKachel">
                         <div class="visitKachel-title">Communication Specialist</div>
-                        <p>Swissco, Filmfachstelle</p>
+                        <p>Swisscom, Filmfachstelle</p>
                         <p>August 2018 - Oktober 2019</p>
                     </div>
                     <div class="visitKachel">
@@ -303,4 +307,6 @@
     </div>
 
 
-</body></html>
+</body>
+
+</html>
