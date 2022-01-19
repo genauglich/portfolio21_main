@@ -591,14 +591,14 @@ body {
     .btn-group button:hover,
     .backBtn:hover {
         background-color: #eee;
-        color: #000;
+        color: #ea5820;
     }
 
     .btn-group button:active,
     .btn-group button:focus,
     .backBtn:active {
         background-color: #000;
-        color: #fff;
+        color: #ea5820;
     }
 
 
