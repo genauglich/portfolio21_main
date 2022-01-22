@@ -85,10 +85,19 @@ header {
     transform: scale(1.2);
 }
 
+.home {
+    width: 100%;
+
+}
+
 .centered {
     display: flex;
     justify-content: center;
     height: 100px;
+}
+
+.centered object {
+    width: 100%;
 }
 
 object {
@@ -537,9 +546,18 @@ body {
         top: 0px;
     }
 
+    .home {
+        width: 20%;
+    }
+
     .centered {
         display: block;
-        width: 200%;
+        width: 340%;
+    }
+
+    .centered object {
+        width: 100%;
+        height: 100%,
     }
 
     .element-item {
