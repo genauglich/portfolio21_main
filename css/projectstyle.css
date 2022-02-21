@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5%;
+    padding: 5% 20%;
 }
 
 #contactBtn {
@@ -142,6 +142,7 @@ p {
     text-transform: none;
     line-height: 1.4;
     letter-spacing: 1.3px;
+
 }
 
 /******bildslider*********/
