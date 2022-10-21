@@ -553,11 +553,13 @@ body {
     .centered {
         display: block;
         width: 340%;
+        height: 100%;
+        margin-top: -30px;
     }
 
     .centered object {
         width: 100%;
-        height: 100%,
+        height: 100%;
     }
 
     .element-item {
